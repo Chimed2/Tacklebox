@@ -1,5 +1,5 @@
-function chelp --description "List all custom fish functions with descriptions"
-    echo "Custom fish commands - run 'chelp' to see this page again"
+function thelp --description "List all custom fish functions with descriptions"
+    echo "Custom fish commands - run 'thelp' to see this page again"
     echo ""
     for f in $HOME/.config/fish/functions/*.fish
         set -l name (string replace -r '.*/(.*)\.fish' '$1' $f)
