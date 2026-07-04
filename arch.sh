@@ -4,8 +4,8 @@ set -e
 
 if [ -f /etc/os-release ]; then
     . /etc/os-release
-    if [ "$ID" != "arch" ]; then
-        echo "❌ Error: This script is explicitly configured for Arch Linux."
+    if [ "$ID" != "arch" ] && [[ " ${ID_LIKE[*]} " != *" arch "* ]]; then
+        echo "❌ Error: This script is explicitly configured for Arch Linux or Arch-based distributions."
         exit 1
     fi
 else
