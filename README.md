@@ -5,6 +5,4 @@
 ## Installation
 
 Arch Linux:
-curl -fsSL https://raw.githubusercontent.com/Chimed2/Tacklebox/main/arch.sh -o arch.sh
-chmod +x arch.sh
-./arch.sh
+curl -fsSL https://raw.githubusercontent.com/Chimed2/Tacklebox/main/arch.sh -o arch.sh && chmod +x arch.sh && ./arch.sh
